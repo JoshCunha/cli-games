@@ -150,7 +150,6 @@ def isOver():
     return 0
 
 def makePlay(started, turn_num):
-    print("started: {}, turn: {}".format(started, turn_num))
     if started and turn_num == 0:
         if board["c"][2] < 0:
             board["c"][2] = 0
@@ -177,7 +176,6 @@ def makePlay(started, turn_num):
                     board["c"][0] = 0
                     return
             else:
-                print("where i should be")
                 if board["b"][0] < 0:
                     board["b"][0] = 0
                     return
